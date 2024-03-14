@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appIMC</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="send">Enviar</string>
+    <string name="peso_placeholder">Digite o peso (kg)</string>
+    <string name="altura_placeholder">Digite a altura (metros)</string>
+</resources>
