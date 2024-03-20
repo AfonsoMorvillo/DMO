@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Exercicio4</string>
+    <string name="name">Nome</string>
+    <string name="send">Enviar</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Telefone</string>
+    <string name="cpf">Cpf</string>
+    <string name="city">Cidade</string>
+    <string name="adress">Endereço</string>
+</resources>
