@@ -1,0 +1,2 @@
+Para criar icone apagar o mipmap e o e tudo do drawble
+
