@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ActivityRegisterActivity"
     android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/menu_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,6 +108,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/poppins"
         android:text="@string/btn_add"
+        android:textColor="@color/black"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
 
 </LinearLayout>

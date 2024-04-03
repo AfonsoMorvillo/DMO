@@ -7,6 +7,8 @@
     <string name="level">Nível 0</string>
     <string name="points">0 pontos</string>
     <string name="latest_activities">Últimas Atividades</string>
+    <string name="toggle_open">Abrir</string>
+    <string name="toggle_close">Fechar</string>
 
     <!-- ActivityRegisterActivity -->
     <array name="activity_type">
@@ -20,4 +22,15 @@
     <string name="hint_duration">Duração (min)</string>
     <string name="hint_distance">Distância (Km)</string>
     <string name="btn_add">Salvar</string>
+
+    <!-- menu -->
+    <string name="enter">Entrar</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_account">Minha Conta</string>
+    <string name="menu_new_activity">Nova Atividade</string>
+    <string name="menu_statistics">Estatísticas</string>
+    <string name="menu_ranking">Classificação</string>
+    <string name="menu_logout">Sair</string>
+    <string name="new_activity">Nova Atividade</string>
+
 </resources>
