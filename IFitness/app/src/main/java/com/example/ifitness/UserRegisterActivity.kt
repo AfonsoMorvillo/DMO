@@ -1,18 +1,18 @@
 package com.example.ifitness
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 
-class ActivityRegisterActivity : AppCompatActivity() {
+class UserRegisterActivity : AppCompatActivity() {
 
     lateinit var toolbar: Toolbar
     lateinit var txtTitle: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_user_register)
         setToolBar()
     }
 
@@ -24,7 +24,7 @@ class ActivityRegisterActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
         txtTitle = findViewById(R.id.toolbar_title)
-        txtTitle.text = getString(R.string.new_activity)
+        txtTitle.text = getString(R.string.new_user)
     }
 
 
@@ -32,5 +32,5 @@ class ActivityRegisterActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
-}
 
+}
