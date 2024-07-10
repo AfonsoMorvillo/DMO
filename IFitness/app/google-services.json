@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "749850986125",
+    "project_id": "ifitnessappdm0",
+    "storage_bucket": "ifitnessappdm0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749850986125:android:5d46420f3080d3755404c4",
+        "android_client_info": {
+          "package_name": "com.example.ifitness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8Ah97F1FOXLyDSazQAI3w_lh6bQd1IwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

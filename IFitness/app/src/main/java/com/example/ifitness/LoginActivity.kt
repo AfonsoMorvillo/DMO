@@ -39,12 +39,16 @@ class LoginActivity : AppCompatActivity() {
         btnLoginUser = findViewById(R.id.btn_login_user)
         btnLoginUser.setOnClickListener {
             userViewModel.login(edtEmail.text.toString(), edtPassword.text.toString()).observe(this, Observer {
-
                 if(it == null)
                     Toast.makeText(applicationContext, getString(R.string.login_message), Toast.LENGTH_SHORT).show()
-                else
+                else {
+                    intent = Intent(
+                        this@LoginActivity,
+                        UserProfileActivity::class.java
+                    )
+                    startActivity(intent)
                     finish()
-
+                }
             })
         }
     }

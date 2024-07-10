@@ -1,6 +1,7 @@
 package com.example.ifitness.model
 
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.time.LocalDate
@@ -8,14 +9,17 @@ import java.util.UUID
 
 @Entity(tableName = "user")
 data class User (
-    @PrimaryKey val id: String = UUID.randomUUID().toString(),
-    val email: String,
-    val name: String,
-    val surname: String,
-    val password: String,
+    @PrimaryKey var id: String = UUID.randomUUID().toString(),
+    var email: String,
+    var name: String,
+    var surname: String,
+    var password: String,
     val image: String,
-    val dateOfBirth: LocalDate?,
-    val gender: Gender?): Serializable {
+    var dateOfBirth: LocalDate?,
+    var gender: Gender?): Serializable {
+
+    @Ignore
+    constructor(): this("", "", "", "", "", "", null, null)
 
     enum class Gender(val value: String) {
 

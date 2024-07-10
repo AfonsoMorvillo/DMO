@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("org.jetbrains.kotlin.kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -14,6 +15,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -59,5 +61,11 @@ dependencies {
 
     // https://mvnrepository.com/artifact/androidx.activity/activity-ktx
     runtimeOnly("androidx.activity:activity-ktx:1.9.0-rc01")
+
+    // fire base
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation("com.google.firebase:firebase-firestore:25.0.0")
+    implementation("com.android.volley:volley:1.2.1")
+    implementation("androidx.multidex:multidex:2.0.1") // aumentar o limite de classes do projeto
 
 }
