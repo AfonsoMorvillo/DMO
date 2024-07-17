@@ -22,6 +22,8 @@ class UserViewModel (application: Application) : AndroidViewModel(application) {
         it.edit().remove(USER_ID).apply()
     }
 
+    fun resetPassword(email: String) = usersRepository.resetPassword(email)
+
     fun isLogged(): LiveData<User> = PreferenceManager.getDefaultSharedPreferences(getApplication()).let {
         val id = it.getString(USER_ID, null)
 

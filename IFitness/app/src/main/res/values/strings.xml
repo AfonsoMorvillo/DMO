@@ -57,6 +57,8 @@
     <string name="user_profile">Minha Conta</string>
     <string name="login_message">E-mail e/ou senha inválidos.</string>
     <string name="update_message">perfil atualizado</string>
+    <string name="edit_activity">Edição de atividade</string>
+    <string name="menu_my_activities">Minhas atividades</string>
     <array name="gender">
         <item>Masculino</item>
         <item>Feminino</item>
